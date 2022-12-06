@@ -1,7 +1,11 @@
 /* Рамка */
 .header {
     border: 1px solid #ECECEC;
-    height: 80px;
+    height: 60px;
+
+    @media (min-width: 768px) {
+        height: 80px;
+    }
 }
 
 /* ФлексБокс для загального div і списків */
@@ -10,13 +14,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 60px;
+    @media (min-width: 768px) {
+        height: 80px;
+    }
 }
 
 /* ФлексБокс для лого і списку сторінок */
 .nav {
-    display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+            display: none;
+    }
 }
 
 .header__logo {
@@ -33,6 +43,10 @@
 /* Розміри для мейла і телефона */
 .nav__list--contacts {
     width: 333px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .nav__item {

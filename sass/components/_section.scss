@@ -1,6 +1,10 @@
 /* Секції */
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 
 /* Заголовки h2 секцій */
@@ -16,6 +20,8 @@
 /* Відступ вниз від заголовків h2 */
 .section-margin {
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .section-list {

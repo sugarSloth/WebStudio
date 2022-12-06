@@ -1,6 +1,29 @@
 /*Розміри li*/
 .qualities {
-    width: 270px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+
+/* Прямокутники бекграунд іконок */
+.qualities__icon {
+    height: 120px;
+    width: 100%;
+    background: var(--darkerWhite);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 /*Заголовки h3*/
@@ -19,13 +42,3 @@
     color: var(--lightGrey);
 }
 
-/* Прямокутники бекграунд іконок */
-.qualities__icon {
-    height: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}

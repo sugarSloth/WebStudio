@@ -1,5 +1,6 @@
 /* Загальне */
 .footer {
+    max-width: 100%;
     background: var(--backGrey);
     padding: 60px 0;
 }
@@ -8,11 +9,21 @@
 .footer__container {
     display: flex;
     align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
 /* Ширина блока з лого */
 .footer-fcont {
     min-width: 231px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+
+    @media (max-width: 1199px) {
+        align-items: center;
+    }
 }
 
 /* Логотип марджіни */
@@ -53,11 +64,19 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
+    @media (max-width: 1199px) {
+        align-items: center;
+    }
 }
 
 /* Іконки футер коробочка */
 .footer__join {
-    margin-left: 70px;
+    // margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1199px) {
+        align-items: center;
+    }
 }
 
 /* Іконки li */
@@ -84,16 +103,28 @@
 }
 
 .footer__input {
-    margin-left: 93px;
+    // margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1199px) {
+        align-items: center;
+    }
+
 }
 
 .footer__mail {
     display: flex;
-    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 1199px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__input--style {
-    width: 358px;
+    width: 450px;
     height: 50px;
     outline: 0;
     background-color: transparent;
@@ -108,6 +139,10 @@
 
     &:focus {
         border: 1px solid var(--contrast);
+    }
+
+    @media (min-width: 1200px) {
+        width: 356px;
     }
 }
 

@@ -1,5 +1,6 @@
 .hero {
-    max-width: 1600px;
+    max-width: 480px;
+    height: 400px;
     background-image: var(--hero_grad), url(../../images/hero/mob@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -19,6 +20,7 @@
     // tablet screen
     @media screen and (min-width: 768px) {
         background-image: var(--hero_grad), url(../../images/hero/tab@1x.jpg);
+        max-width: 768px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -29,6 +31,8 @@
 
     // desktop screen
     @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 600px;
         padding: 200px 0;
         background-image: var(--hero_grad), url(../../images/hero/desk@1x.jpg);
 
@@ -41,7 +45,7 @@
 }
 
 .hero__title {
-    width: 360px;
+    max-width: 360px;
     margin: 0 auto;
     font-weight: 900;
     font-size: 26px;
@@ -53,7 +57,7 @@
     -webkit-text-stroke: 1px #000000;
 
     @media screen and (min-width: 1200px) {
-        width: 696px;
+        max-width: 696px;
         font-size: 44px;
         line-height: 1.364;
     }

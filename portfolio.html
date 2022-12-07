@@ -32,7 +32,8 @@
             <a href="./index.html" class="link nav__link nav__link--ncurrent">Студія</a>
           </li>
           <li class="nav__item">
-            <a href="./portfolio.html" rel="noreferrer noopener" class="link nav__link nav__link--current">Портфоліо</a>
+            <a href="./portfolio.html" rel="noreferrer noopener"
+              class="link nav__link nav__link--current">Портфоліо</a>
           </li>
           <li class="nav__item">
             <a href="" class="link nav__link nav__link--ncurrent">Контакти</a>
@@ -43,13 +44,13 @@
       <ul class="header__container list nav__list--contacts">
         <li>
           <a href="mailto:info@devstudio.com" class="link nav__link header__contacts">
-            <svg class="header__icons" width="16" height="12">
+            <svg class="header__icons--mail">
               <use href="./images/icons.svg#icon-mail_icon"></use>
             </svg>info@devstudio.com</a>
         </li>
         <li>
           <a href="tel:+380961111111" class="link nav__link header__contacts">
-            <svg class="header__icons" width="10" height="16">
+            <svg class="header__icons--tel">
               <use href="./images/icons.svg#icon-tel_icon"></use>
             </svg>+38 096 111 11 11</a>
         </li>
@@ -98,7 +99,7 @@
         <ul class="project__list">
           <li class="project__item">
             <div class="project__overlay">
-              <img src="./images/portfolio/1technokryak.jpg" alt="опис" width="370" height="294" />
+              <img src="./images/portfolio/1technokryak.jpg" alt="опис" class="project__img" />
               <div class="overlay">
                 <p class="project__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -114,7 +115,7 @@
           </li>
           <li class="project__item">
             <div class="project__overlay">
-              <img src="./images/portfolio/2poster.jpg" alt="опис" width="370" height="294" />
+              <img src="./images/portfolio/2poster.jpg" alt="опис" class="project__img" />
               <div class="overlay">
                 <p class="project__overlay-text">
 
@@ -130,7 +131,7 @@
           </li>
           <li class="project__item">
             <div class="project__overlay">
-              <img src="./images/portfolio/3restaurant.jpg" alt="" width="370" height="294" />
+              <img src="./images/portfolio/3restaurant.jpg" alt="" class="project__img" />
               <div class="overlay">
                 <p class="project__overlay-text">
 
@@ -144,7 +145,7 @@
           </li>
           <li class="project__item">
             <div class="project__overlay">
-              <img src="./images/portfolio/4project.jpg" alt="" width="370" height="294" />
+              <img src="./images/portfolio/4project.jpg" alt="" class="project__img" />
               <div class="overlay">
                 <p class="project__overlay-text">
 
@@ -158,7 +159,7 @@
           </li>
           <li class="project__item">
             <div class="project__overlay">
-              <img src="./images/portfolio/5project2.jpg" alt="" width="370" height="294" />
+              <img src="./images/portfolio/5project2.jpg" alt="" class="project__img" />
               <div class="overlay">
                 <p class="project__overlay-text">
 
@@ -172,7 +173,7 @@
           </li>
           <li class="project__item">
             <div class="project__overlay">
-              <img src="./images/portfolio/6inspiration.jpg" alt="" width="370" height="294" />
+              <img src="./images/portfolio/6inspiration.jpg" alt="" class="project__img" />
               <div class="overlay">
                 <p class="project__overlay-text">
 
@@ -186,7 +187,7 @@
           </li>
           <li class="project__item">
             <div class="project__overlay">
-              <img src="./images/portfolio/7edition.jpg" alt="" width="370" height="294" />
+              <img src="./images/portfolio/7edition.jpg" alt="" class="project__img" />
               <div class="overlay">
                 <p class="project__overlay-text">
 
@@ -200,7 +201,7 @@
           </li>
           <li class="project__item">
             <div class="project__overlay">
-              <img src="./images/portfolio/8project3.jpg" alt="" width="370" height="294" />
+              <img src="./images/portfolio/8project3.jpg" alt="" class="project__img" />
               <div class="overlay">
                 <p class="project__overlay-text">
 
@@ -214,7 +215,7 @@
           </li>
           <li class="project__item">
             <div class="project__overlay">
-              <img src="./images/portfolio/9growingb.jpg" alt="" width="370" height="294" />
+              <img src="./images/portfolio/9growingb.jpg" alt="" class="project__img" />
               <div class="overlay">
                 <p class="project__overlay-text">
                 </p>
@@ -288,8 +289,7 @@
       </div>
       <div class="footer__input">
         <h3 class="footer__title">Підпишіться на розсилку</h3>
-        <div>
-          <form class="footer__mail">
+        <form class="footer__mail">
             <input type="email" name="footer-email" placeholder="E-mail" class="footer__input--style" />
             <button type="submit" class="button footer__button button--contrast-theme">
               <span class="button__text button__text--contrast-theme">Підписатися</span>
@@ -298,7 +298,6 @@
               </svg>
             </button>
           </form>
-        </div>
       </div>
     </div>
   </footer>

@@ -6,7 +6,11 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
-    max-width: 100%;
+    overflow-x: hidden;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 /* Всі контейнери */
@@ -14,10 +18,7 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     height: 100%;
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
+    max-width: 100%;
 
     @media screen and (min-width: 768px) {
         width: 768px;

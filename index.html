@@ -43,13 +43,13 @@
       <ul class="header__container list nav__list--contacts">
         <li>
           <a href="mailto:info@devstudio.com" class="link nav__link header__contacts">
-            <svg class="header__icons" width="16" height="12">
+            <svg class="header__icons--mail">
               <use href="./images/icons.svg#icon-mail_icon"></use>
             </svg>info@devstudio.com</a>
         </li>
         <li>
           <a href="tel:+380961111111" class="link nav__link header__contacts">
-            <svg class="header__icons" width="10" height="16">
+            <svg class="header__icons--tel">
               <use href="./images/icons.svg#icon-tel_icon"></use>
             </svg>+38 096 111 11 11</a>
         </li>
@@ -69,8 +69,8 @@
     <section class="section">
       <div class="container">
         <h2 class="visually-hidden">Якості</h2>
-        <ul class="list section-list">
-          <li class="qualities">
+        <ul class="list section-list qualities">
+          <li class="qualities__item">
             <div class="qualities__icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-antenna"></use>
@@ -82,7 +82,7 @@
               формування позиції.
             </p>
           </li>
-          <li class="qualities">
+          <li class="qualities__item">
             <div class="qualities__icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-clock"></use>
@@ -95,7 +95,7 @@
             </p>
           </li>
 
-          <li class="qualities">
+          <li class="qualities__item">
             <div class="qualities__icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-diagram_comp"></use>
@@ -107,7 +107,7 @@
             </p>
           </li>
 
-          <li class="qualities">
+          <li class="qualities__item">
             <div class="qualities__icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-astronaut"></use>
@@ -427,8 +427,7 @@
       </div>
       <div class="footer__input">
         <h3 class="footer__title">Підпишіться на розсилку</h3>
-        <div>
-          <form class="footer__mail">
+        <form class="footer__mail">
             <input type="email" name="footer-email" placeholder="E-mail" class="footer__input--style" />
             <button type="submit" class="button footer__button button--contrast-theme">
               <span class="button__text button__text--contrast-theme">Підписатися</span>
@@ -437,7 +436,6 @@
               </svg>
             </button>
           </form>
-        </div>
       </div>
     </div>
   </footer>

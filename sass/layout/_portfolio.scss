@@ -4,6 +4,10 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
+
+    @media (max-width: 767.99px) {
+        justify-content: flex-start;
+    }
 }
 
 .filters__button {
@@ -43,8 +47,10 @@
 
 /* Роботи ul */
 .project__list {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
     gap: 30px;
     padding: 0;
@@ -53,7 +59,7 @@
 
 /*Роботи li*/
 .project__item {
-    flex-basis: calc((100% - 60px) / 3);
+    width: 450px;
     border: 1px solid #EEEEEE;
     transition: box-shadow var(--transition);
 
@@ -61,6 +67,29 @@
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         cursor: pointer;
+    }
+    
+    @media (min-width: 768px) {
+        max-width: 354px;
+    }
+
+    @media (min-width: 1200px) {
+        flex-basis: calc((100% - 60px) / 3);
+        max-width: 370px;
+    }
+}
+
+.project__img {
+    width: 450px;
+    min-width: 100%;
+
+    @media (min-width: 768px) {
+        max-width: 354px;
+    }
+
+    @media (min-width: 1200px) {
+        flex-basis: calc((100% - 60px) / 3);
+        max-width: 370px;
     }
 }
 

@@ -766,7 +766,7 @@ img {
 .hero {
   max-width: 480px;
   height: 400px;
-  background-image: var(--hero_grad), url(../../images/hero/mob@1x.jpg);
+  background-image: var(--hero_grad), url(../images/hero/mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -776,18 +776,18 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero_grad), url(../../images/hero/mob@2x.jpg);
+    background-image: var(--hero_grad), url(../images/hero/mob@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: var(--hero_grad), url(../../images/hero/tab@1x.jpg);
+    background-image: var(--hero_grad), url(../images/hero/tab@1x.jpg);
     max-width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero_grad), url(../../images/hero/tab@2x.jpg);
+    background-image: var(--hero_grad), url(../images/hero/tab@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -795,12 +795,12 @@ img {
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
-    background-image: var(--hero_grad), url(../../images/hero/desk@1x.jpg);
+    background-image: var(--hero_grad), url(../images/hero/desk@1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero_grad), url(../../images/hero/desk@2x.jpg);
+    background-image: var(--hero_grad), url(../images/hero/desk@2x.jpg);
   }
 }
 

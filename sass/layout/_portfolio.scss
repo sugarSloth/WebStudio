@@ -82,7 +82,7 @@
 .project__img {
     width: 450px;
     min-width: 100%;
-    height: 294px;
+    max-height: 294px;
     min-height: 100%;
 
     @media (min-width: 768px) {
@@ -107,6 +107,11 @@
     line-height: 1.556;
     letter-spacing: 0.03em;
     color: var(--white);
+
+    @media (max-width: 479.9px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 
 /* Заголовки назви */

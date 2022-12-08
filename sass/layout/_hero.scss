@@ -18,7 +18,7 @@
     }
 
     // tablet screen
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
         background-image: var(--hero_grad), url(../images/hero/tab@1x.jpg);
         max-width: 768px;
 
@@ -30,7 +30,7 @@
     }
 
     // desktop screen
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768.5px) {
         max-width: 1600px;
         height: 600px;
         padding: 200px 0;

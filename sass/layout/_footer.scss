@@ -9,9 +9,17 @@
 .footer__container {
     display: flex;
     align-items: baseline;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 60px;
+    
+
+    @media (max-width: 767.9px) {
+        justify-content: center;
+        gap: 60px;
+    }
+
+    @media (max-width: 1199.9px) {
+        justify-content: center;
+    }
 }
 
 /* Ширина блока з лого */
@@ -21,8 +29,17 @@
     flex-direction: column;
     justify-content: baseline;
 
-    @media (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199.9px) {
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: 1199.9px) {
         align-items: center;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 70px;
     }
 }
 
@@ -71,11 +88,15 @@
 
 /* Іконки футер коробочка */
 .footer__join {
-    // margin-left: 70px;
     display: flex;
     flex-direction: column;
+
     @media (max-width: 1199px) {
         align-items: center;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 93px;
     }
 }
 

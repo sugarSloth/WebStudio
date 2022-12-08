@@ -25,6 +25,7 @@
     padding: 40px;
     position: absolute;
     width: 450px;
+    max-width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -179,6 +180,11 @@
     color: var(--lightGrey);
     margin: 0;
     cursor: pointer;
+
+    @media screen and (max-width: 435px) {
+        font-size: 7px;
+        line-height: 8px;
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;

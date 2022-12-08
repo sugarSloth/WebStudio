@@ -29,12 +29,13 @@
     display: flex;
     align-items: center;
 
-    @media (max-width: 767.99px) {
+    @media (max-width: 767.9px) {
         display: none;
     }
 }
 
 .header__logo {
+    
 
     @media (min-width: 768px) {
         margin-right: 87px;
@@ -66,7 +67,7 @@
     align-content: center;
     gap: 10px;
 
-    @media (max-width: 767.99px) {
+    @media (max-width: 767.9px) {
         display: none;
     }
 
